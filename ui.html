@@ -1,0 +1,99 @@
+<style>
+  body{
+    padding: 8px;
+  }
+  h3{
+    padding-top: 12px;
+    text-align: center;
+  }
+  .control{
+    display: inline-block;
+    width: 100%;
+    height: 32px;
+    padding: 0 12px 0 4px;
+    font-size: 14;
+    border-radius: 4px;
+    border-color: rgb(166, 166, 166);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .label{
+    font-size: 14;
+    width: 100%;
+    padding-bottom: 4px;
+    color: dimgray;
+    display: inline-block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  #create{
+    height: 32px;
+    width: 164px;
+    margin-right: 16px;
+    border: none;
+    background-color: dodgerblue;
+    color: aliceblue;
+    border-radius: 4px;
+  }
+  #cancel{
+    height: 32px;
+    width: 82px;
+    border: none;
+    border-radius: 4px;
+  }
+</style>
+
+<h3>🧙🔮 开始创建你的封面...</h3>
+
+<form id="pluginForm">
+  <p>
+    <label class="label" for="project-title">项目名称：</label>
+    <input class="control" type="text" id="prj" name="prj" placeholder="请输入项目名称...">
+  </p>
+  <!-- <p>
+    <label for="description">项目描述</label>
+    <input type="text" id="desc" name="desc" value="请填写...">
+  </p> -->
+  <p>
+    <label class="label" for="state">选择状态：</label>
+    <select class="control" id="desi" name ="state" value ="设计中">
+      <option >设计中</option>
+      <option >评审中</option>
+      <option >修改中</option>
+      <option >已发布</option>
+    </select>
+  </p>
+
+<!-- <p>column02: <input id="col02" value="560"></p>
+<p>column03: <input id="col03" value="160"></p> -->
+</form>
+<button id="create">创建</button>
+<!-- <button id="fresh">更新</button> -->
+<button id="cancel">取消</button>
+
+<script>
+  document.getElementById('create').onclick = () => {
+  const textbox01 = document.getElementById('prj');
+  const textbox02 = document.getElementById('desc');
+  const select = document.getElementById('desi');
+  // const prj = parseInt(textbox01.value, 10);
+  // get PluginForm
+  let pluginForm = document.querySelector('#pluginForm');
+  // get the field data from the form
+  let pluginFormData = new FormData(pluginForm);
+  // Create an Object an populate it with the form data
+  let formDataObj = {};
+  for (let [key,value] of pluginFormData){
+    formDataObj[key] = value
+  }
+  // console.log(formDataObj)
+
+  parent.postMessage({ pluginMessage: { type: 'anctionCreate', formDataObj } }, '*');
+  // parent.postMessage({ pluginMessage: { type: 'print', col03 } }, '*');
+}
+// document.getElementById('fresh').onclick = () => {
+//   parent.postMessage({ pluginMessage: { type: 'anctionFresh', formDataObj } }, '*');
+// }
+
+document.getElementById('cancel').onclick = () => {
+  parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*')
+}
+</script>

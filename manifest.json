@@ -1,0 +1,17 @@
+{
+  "name": "Cover Generator",
+  "id": "1221478489770558924",
+  "api": "1.0.0",
+  "main": "code.js",
+  "capabilities": [],
+  "enableProposedApi": false,
+  "editorType": [
+    "figma"
+  ],
+  "ui": "ui.html",
+  "permissions": [
+    "currentuser",
+    "activeusers",
+    "fileusers"
+  ]
+}
