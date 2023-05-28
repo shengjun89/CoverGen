@@ -1,4 +1,4 @@
-![0914c75ba0f76e942da83564a37cc4f8.png](0914c75ba0f76e942da83564a37cc4f8.png)
+![coverGen.gif](../../Desktop/coverGen.gif)
 
 输入项目名称 -> 选择状态  -> 选择创建
 
