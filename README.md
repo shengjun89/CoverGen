@@ -26,21 +26,6 @@
 4.  自动填充当前的创建时间
 5.  自动将当前生成的封面设置为项目封面，退出列表模式可预览（有时间差）
 
-<!-- <!DOCTYPE html>
-<html>
-<head>
-    <title>Video Example</title>
-</head>
-<body>
-    <video controls>
-        <source src="GenCover.mp4" type="video/mp4">
-        <!-- 支持多个不同格式的视频源，以备不同浏览器支持 -->
-        <!--<source src="video.webm" type="video/webm">-->
-        <!--<source src="video.ogv" type="video/ogg">-->
-        Your browser does not support the video tag.
-    </video>
-</body>
-</html> -->
 
 版本记录：
 V1.0 自动填入用户名和创建时间，同时将生成的图层设置为项目封面
