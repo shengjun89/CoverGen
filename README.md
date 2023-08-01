@@ -1,18 +1,23 @@
+#使用手册
 
-![aa72365fb02db0e36549aedd8c88cdf6.png](aa72365fb02db0e36549aedd8c88cdf6.png)
-step01: 输入项目名称
+1. 点击‘Download Zip’下载插件安装包到本地。
+![]
 
-
-![d8b469957df11c13d49ffa1cb2cb65c2.png](d8b469957df11c13d49ffa1cb2cb65c2.png)
-step02: 选择项目状态
-
-
-![0108990ffd9b480625acea78148ef52b.png](0108990ffd9b480625acea78148ef52b.png "0108990ffd9b480625acea78148ef52b.png")
-step03: 点击创建
+2. 打开Figma,选择开发者->从Manifest导入插件
 
 
-![49c72631321608d3f29c53d57ca0faa2.png](49c72631321608d3f29c53d57ca0faa2.png)
-step04: 退回项目列表预览封面
+3. 选择manifest.josn文件，点击打开
+
+4. 点击运行插件
+
+----
+
+#功能介绍
+1.  输入项目名称
+2.  允许切换项目状态
+3.  自动填充设计师名称（并且在前面添加一个emoji）
+4.  自动填充当前的创建时间
+5.  自动将当前生成的封面设置为项目封面，退出列表模式可预览（有时间差）
 
 
 
