@@ -17,6 +17,8 @@
 
 ----
 
+![插件教程](GenCover.gif)
+
 # 功能介绍
 1.  输入项目名称
 2.  允许切换项目状态
@@ -24,7 +26,7 @@
 4.  自动填充当前的创建时间
 5.  自动将当前生成的封面设置为项目封面，退出列表模式可预览（有时间差）
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <title>Video Example</title>
@@ -38,7 +40,7 @@
         Your browser does not support the video tag.
     </video>
 </body>
-</html>
+</html> -->
 
 版本记录：
 V1.0 自动填入用户名和创建时间，同时将生成的图层设置为项目封面
