@@ -4,12 +4,15 @@
 
 
 2. 打开Figma,选择开发者->从Manifest导入插件
+
 ![步骤一](step01.png)
 
 3. 选择manifest.josn文件，点击打开
+
 ![步骤二](step02.png)
 
 4. 点击运行插件
+
 ![步骤三](step03.png)
 
 ----
